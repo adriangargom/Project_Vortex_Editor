@@ -53,7 +53,7 @@ Currently, the project includes the following features, with plans to implement 
 
 ### Model and Light Creation
 
-- `3d Models`: The proyect allows for the creation of various 3D models in the scene such as cubes, spheres, capsules and more.
+- `3d Models`: The project allows for the creation of various 3D models in the scene such as cubes, spheres, capsules and more.
 
 - `Light sources`: Users can create different types of light sources to achieve various lighting effects.
 
@@ -61,7 +61,7 @@ Currently, the project includes the following features, with plans to implement 
 
 - `Hierarchy panel`: In the hierarchy panel, users can view all objects in the scene in a tree format and expand or collapse nested objects.
 
-- `Object Visibility`: Users can toggle the visibility of objects and their nested childrens by using te option next to the object's name in the hierarchy.
+- `Object Visibility`: Users can toggle the visibility of objects and their nested children by using the option next to the object's name in the hierarchy.
 
 - `Object drag and drop`: Users can drag and drop objects to reposition them within the hierarchy, nest them inside other objects, or move them to the base scene.
 
@@ -71,7 +71,7 @@ Currently, the project includes the following features, with plans to implement 
 
 ### Tool
 
-- `Tools`: Within the scene frame, users can find a tools panel that displays the three currently available tools: translate, rotate, and scale. The active tool is highlighted. This panel can be dragged and dropped within the scene. Users can switch between toos by clicking on them or using keyboard shortcuts.
+- `Tools`: Within the scene frame, users can find a tools panel that displays the three currently available tools: translate, rotate, and scale. The active tool is highlighted. This panel can be dragged and dropped within the scene. Users can switch between tools by clicking on them or using keyboard shortcuts.
 
 - `Camera axis`: Additionally, there is a camera axis panel displaying the X, Y, and Z axes. Clicking on an axis repositions the camera to align with that axis. This panel can also be dragged and dropped within the scene frame.
 
