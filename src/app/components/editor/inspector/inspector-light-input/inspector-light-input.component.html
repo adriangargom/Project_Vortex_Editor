@@ -1,0 +1,41 @@
+
+<app-inspector-dropdown [title]="title">
+
+    <form [formGroup]="lightFormData"
+        class="flex flex-col gap-2">
+
+        <div class="flex place-items-center gap-2">
+            <label for="color-field"
+                class="text-white text-xs">
+                Color
+            </label>
+
+            <input
+                id="color-field"
+                type="color"
+                formControlName="color"
+                class="p-1
+                bg-slate-700 rounded-md text-white text-sm
+                focus:outline-none" />
+        </div>
+
+        <div class="flex place-items-center gap-2">
+            <label for="intensity-field"
+                class="text-white text-xs">
+                Intensity
+            </label>
+
+            <input
+                id="intensity-field"
+                type="number"
+                step=".1"
+                min="0" max="100"
+                formControlName="intensity"
+                class="p-1
+                bg-slate-700 rounded-md text-white text-sm
+                focus:outline-none" />
+        </div>
+
+    </form>
+
+</app-inspector-dropdown>

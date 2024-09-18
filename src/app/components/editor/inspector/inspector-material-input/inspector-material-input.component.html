@@ -1,0 +1,90 @@
+
+<app-inspector-dropdown [title]="title">
+
+    <form [formGroup]="materialFormData"
+        class="flex flex-col gap-2">
+
+        <div class="flex place-items-center gap-2">
+            <label for="material-color"
+                class="text-white text-xs">
+                Color
+            </label>
+
+            <input
+                id="material-color"
+                type="color"
+                formControlName="color"
+                class="p-1
+                bg-slate-700 rounded-md text-white text-xs
+                focus:outline-none" />
+        </div>
+
+        <div class="flex place-items-center gap-2">
+            <label for="roughness-field"
+                class="text-white text-xs">
+                Roughness
+            </label>
+
+            <input
+                id="roughness-field"
+                type="number"
+                step=".1"
+                min="0" max="1"
+                formControlName="roughness"
+                class="p-1
+                bg-slate-700 rounded-md text-white text-xs
+                focus:outline-none" />
+        </div>
+
+        <div class="flex place-items-center gap-2">
+            <label for="metalness-field"
+                class="text-white text-xs">
+                Metalness
+            </label>
+
+            <input
+                id="metalness-field"
+                type="number"
+                step=".1"
+                min="0" max="1"
+                formControlName="metalness"
+                class="p-1
+                bg-slate-700 rounded-md text-white text-xs
+                focus:outline-none" />
+        </div>
+
+        <div class="flex place-items-center gap-2">
+            <label for="emission-field"
+                class="text-white text-xs">
+                Emission
+            </label>
+
+            <input
+                id="emission-field"
+                type="number"
+                step=".1"
+                min="0" max="1"
+                formControlName="emission"
+                class="p-1
+                bg-slate-700 rounded-md text-white text-xs
+                focus:outline-none" />
+        </div>
+
+        <div class="flex place-items-center gap-2">
+            <label for="wireframe-field"
+                class="text-white text-xs">
+                Wireframe
+            </label>
+
+            <input
+                id="wireframe-field"
+                type="checkbox"
+                formControlName="wireframe"
+                class="p-1
+                bg-slate-700 rounded-md text-white text-xs
+                focus:outline-none" />
+        </div>
+
+    </form>
+
+</app-inspector-dropdown>

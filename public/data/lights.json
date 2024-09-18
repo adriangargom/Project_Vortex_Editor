@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Point",
+        "generationCode": "point",
+        "icon": "svg/items/light_point_icon.svg" 
+    },
+    {
+        "name": "Spot",
+        "generationCode": "spot",
+        "icon": "svg/items/spot_light_icon.svg" 
+    },
+    {
+        "name": "Ambient",
+        "generationCode": "ambient",
+        "icon": "svg/items/ambient_light_icon.svg" 
+    }
+]

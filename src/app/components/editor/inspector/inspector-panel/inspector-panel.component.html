@@ -1,0 +1,73 @@
+
+<section #inspectorPanel
+    [ngSwitch]="isObjectSelected"
+    class="size-full overflow-y-auto
+    bg-slate-800 rounded-md">
+
+    <section *ngSwitchCase="true"
+        class="h-full p-2 flex flex-col gap-2">
+
+        <!-- Name input field -->
+        <app-inspector-name-input
+            [nameData]="selectedObjectName"
+            (updateNameEvent)="updateSelectedObjectName($event)">
+        </app-inspector-name-input>
+
+        <ng-container *ngIf="!selectedObjectLightData">
+
+            <!-- Position axis input dropdown -->
+            <app-inspector-axis-input
+                title="Position"
+                [axisData]="selectedObjectPosition"
+                (updatedDataEvent)="updateSelectedObjectPosition($event)">
+            </app-inspector-axis-input>
+
+            <!-- Rotation axis input dropdown -->
+            <app-inspector-axis-input
+                title="Rotation"
+                [axisData]="selectedObjectRotation"
+                (updatedDataEvent)="updateSelectedObjectRotation($event)">
+            </app-inspector-axis-input>
+
+            <!-- Scale axis input dropdown -->
+            <app-inspector-axis-input
+                title="Scale"
+                [axisData]="selectedObjectScale"
+                (updatedDataEvent)="updateSelectedObjectScale($event)">
+            </app-inspector-axis-input>
+
+        </ng-container>
+
+
+        <!-- Material input dropdown -->
+        <ng-container *ngIf="selectedObjectMaterialData">
+
+            <app-inspector-material-input
+                title="Material"
+                [materialData]="selectedObjectMaterialData">
+            </app-inspector-material-input>
+
+        </ng-container>
+
+        <!-- Light input dropdown -->
+        <ng-container *ngIf="selectedObjectLightData">
+
+            <app-inspector-light-input
+                title="Light"
+                [lightData]="selectedObjectLightData">
+            </app-inspector-light-input>
+
+        </ng-container>
+
+    </section>
+
+    <article *ngSwitchCase="false"
+        class="h-full flex place-items-center justify-center">
+
+        <h1 class="text-gray-400 text-lg">
+            No object selected
+        </h1>
+
+    </article>
+
+</section>

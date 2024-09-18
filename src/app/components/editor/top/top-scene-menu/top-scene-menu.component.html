@@ -1,0 +1,73 @@
+
+<section [ngClass]="selectedMenu === 'scene' ? 'animate-smooth-y-expand' : 'animate-smooth-y-contract'"
+    class="size-auto mt-4 p-2 absolute
+    bg-slate-900 rounded-md border-2 border-gray-400
+    origin-top transition z-30">
+
+    <form [formGroup]="sceneFormData"
+        class="flex flex-col gap-2">
+
+        <h2 class="text-base font-bold text-white">
+            Scene
+        </h2>
+
+        <div class="flex place-items-center gap-2">
+            <label
+                for="scene-name-field"
+                class="w-32
+                text-white text-xs">
+                Scene name
+            </label>
+
+            <input
+                id="scene-name-field"
+                type="text"
+                formControlName="sceneName"
+                class="p-1
+                bg-slate-700 rounded-md text-white text-sm
+                focus:outline-none" />
+        </div>
+
+        <div class="flex place-items-center gap-2">
+            <label for="scene-color-field"
+                class="w-32
+                text-white text-xs">
+                Background color
+            </label>
+
+            <input
+                id="scene-color-field"
+                type="color"
+                formControlName="sceneColor"
+                class="p-1
+                bg-slate-700 rounded-md text-white text-sm
+                focus:outline-none" />
+        </div>
+
+        <h2 class="text-base font-bold text-white">
+            Fog
+        </h2>
+
+        <div class="flex place-items-center gap-2">
+            <label for="fog-enabled-field"
+                class="w-32
+                text-white text-xs">
+                Enable fog
+            </label>
+
+            <input
+                id="fog-enabled-field"
+                type="checkbox"
+                formControlName="sceneFogEnabled"
+                class="p-1
+                bg-slate-700 rounded-md text-white text-sm
+                focus:outline-none" />
+        </div>
+
+        <article [ngClass]="sceneFormData.value.sceneFogEnabled ? 'block' : 'hidden'">
+            <app-top-scene-fog-menu> </app-top-scene-fog-menu>
+        </article>
+
+    </form>
+
+</section>

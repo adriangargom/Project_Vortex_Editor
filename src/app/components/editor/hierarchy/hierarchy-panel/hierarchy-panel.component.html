@@ -1,0 +1,29 @@
+
+<section #hierarchyPanel
+    [ngSwitch]="hasSceneGroupElements"
+    class="size-full overflow-y-auto
+    bg-slate-800 rounded-md">
+
+    <ul *ngSwitchCase="true"
+        cdkDropList
+        cdkDropListSortingDisabled
+        (cdkDropListDropped)="handleDrop($event)"
+        [cdkDropListData]="sceneGroup"
+        class="p-2">
+
+        <li *ngFor="let children of sceneGroupChildren">
+            <app-hierarchy-item [object]="children"> </app-hierarchy-item>
+        </li>
+
+    </ul>
+
+    <article *ngSwitchCase="false"
+        class="h-full flex place-items-center justify-center">
+
+        <h1 class="text-gray-400 text-lg">
+            Empty Scene
+        </h1>
+
+    </article>
+
+</section>

@@ -1,0 +1,28 @@
+
+<article class="w-full">
+
+    <section (click)="handleExpansion()"
+        class="px-2 flex place-items-center justify-center gap-1
+        bg-slate-700 rounded-md cursor-pointer">
+
+        <span [ngClass]="{'rotate-180' : isExpanded}"
+            class="material-symbols-rounded
+                text-white text-lg transition">
+            arrow_drop_down
+        </span>
+
+        <h1 class="w-full
+            text-white text-lg">
+            {{title}}
+        </h1>
+
+    </section>
+
+    <section [ngClass]="isExpanded ? 'block' : 'hidden'"
+        class="w-full p-2 px-4">
+
+        <ng-content> </ng-content>
+
+    </section>
+
+</article>

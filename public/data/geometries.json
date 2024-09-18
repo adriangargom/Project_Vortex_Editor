@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Box",
+        "generationCode": "box",
+        "icon": "svg/items/box_icon.svg" 
+    },
+    {
+        "name": "Sphere",
+        "generationCode": "sphere",
+        "icon": "svg/items/sphere_icon.svg" 
+    },
+    {
+        "name": "Capsule",
+        "generationCode": "capsule",
+        "icon": "svg/items/capsule_icon.svg" 
+    },
+    {
+        "name": "Cone",
+        "generationCode": "cone",
+        "icon": "svg/items/cone_icon.svg" 
+    },
+    {
+        "name": "Cylinder",
+        "generationCode": "cylinder",
+        "icon": "svg/items/cylinder_icon.svg" 
+    },
+    {
+        "name": "Torus",
+        "generationCode": "torus",
+        "icon": "svg/items/torus_icon.svg" 
+    }
+]

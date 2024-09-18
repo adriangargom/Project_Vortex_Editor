@@ -1,0 +1,55 @@
+
+<div appWindow class="size-full p-2 flex flex-col gap-2
+    bg-black select-none">
+
+    <header class="w-full p-0 flex gap-2
+        bg-slate-900 rounded-md">
+
+        <app-top-panel> </app-top-panel>
+
+    </header>
+
+    <main class="size-full flex gap-1">
+
+        <article #leftPanel
+            class="size-full min-w-[50%] lg:min-w-[65%] relative
+            bg-slate-900 rounded-md">
+
+            <div #sceneRoot appScene
+                class="size-full">
+            </div>
+
+            <app-controls-tool-bar cdkDrag [cdkDragBoundary]="leftPanel"
+                class="absolute bottom-0 left-0">
+            </app-controls-tool-bar>
+
+            <app-position-tool-bar cdkDrag [cdkDragBoundary]="leftPanel"
+                class="absolute bottom-0 right-0">
+            </app-position-tool-bar>
+
+            <a href="https://github.com/adriangargom/Vortex_editor"
+                class="w-full p-1 absolute bottom-0
+                text-gray-400 text-center hover:underline cursor-pointer">
+                Developed by : adriangargom
+            </a>
+
+        </article>
+
+        <div (mousedown)="handleLeftPaneResize($event)"
+            class="w-2 h-full
+            hover:bg-slate-700 rounded-md cursor-col-resize transition">
+        </div>
+
+
+        <aside class="h-full min-w-[30%] lg:min-w-[20%] p-2 flex flex-col flex-grow gap-2
+            bg-slate-900 rounded-md">
+
+            <app-hierarchy-panel class="h-full"> </app-hierarchy-panel>
+
+            <app-inspector-panel class="h-full"> </app-inspector-panel>
+
+        </aside>
+
+    </main>
+
+</div>

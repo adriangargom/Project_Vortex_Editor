@@ -1,0 +1,8 @@
+<svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="16" y="16" width="25" height="25" fill="white"/>
+<rect x="0.5" y="0.5" width="56" height="56" stroke="white" stroke-dasharray="4 4"/>
+<path d="M0.5 0.5L18 18" stroke="white" stroke-dasharray="4 4"/>
+<path d="M56.5 0.5L40 17" stroke="white" stroke-dasharray="4 4"/>
+<path d="M56.5 56.5L39 39" stroke="white" stroke-dasharray="4 4"/>
+<path d="M0.5 56.5L17 40" stroke="white" stroke-dasharray="4 4"/>
+</svg>

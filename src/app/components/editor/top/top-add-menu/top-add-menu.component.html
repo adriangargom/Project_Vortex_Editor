@@ -1,0 +1,45 @@
+
+<section [ngClass]="selectedMenu === 'new' ? 'animate-smooth-y-expand' : 'animate-smooth-y-contract'"
+    class="size-auto mt-4 p-2 flex flex-col gap-2 absolute
+    bg-slate-900 rounded-md border-2 border-gray-400
+    origin-top transition z-30">
+
+    <article class="flex flex-col gap-2">
+
+        <h2 class="text-base font-bold text-white">
+            Geometries
+        </h2>
+
+        <ul>
+            <li *ngFor="let geometryData of geometries">
+
+                <app-top-add-menu-item
+                    (click)="generateGeometry(geometryData.generationCode)"
+                    [objectData]="geometryData">
+                </app-top-add-menu-item>
+
+            </li>
+        </ul>
+
+    </article>
+
+    <article class="flex flex-col gap-2">
+
+        <h2 class="text-base font-bold text-white">
+            Lights
+        </h2>
+
+        <ul>
+            <li *ngFor="let lightData of lights">
+
+                <app-top-add-menu-item
+                    (click)="generateLight(lightData.generationCode)"
+                    [objectData]="lightData">
+                </app-top-add-menu-item>
+
+            </li>
+        </ul>
+
+    </article>
+
+</section>

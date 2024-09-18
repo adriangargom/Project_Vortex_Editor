@@ -1,0 +1,55 @@
+
+<app-inspector-dropdown [title]="title">
+
+    <form [formGroup]="axisFormData"
+        class="w-full flex flex-col gap-2">
+
+        <div class="flex place-items-center gap-2">
+            <label for="x-field"
+                class="text-white text-xs">
+                X
+            </label>
+
+            <input id="x-field"
+                type="number"
+                step=".1"
+                formControlName="x"
+                [value]="axisFormData.value.x"
+                class="w-full p-1
+                bg-slate-700 rounded-md text-white text-xs text-center
+                focus:outline-none"/>
+        </div>
+
+        <div class="flex place-items-center gap-2">
+            <label for="y-field"
+                class="text-white text-xs">
+                Y
+            </label>
+
+            <input id="y-field"
+                type="number"
+                step=".1"
+                formControlName="y"
+                class="w-full p-1
+                bg-slate-700 rounded-md text-white text-xs text-center
+                focus:outline-none"/>
+        </div>
+
+        <div class="flex place-items-center gap-2">
+            <label for="z-field"
+                class="text-white text-xs">
+                Z
+            </label>
+
+            <input id="z-field"
+                type="number"
+                step=".1"
+                formControlName="z"
+                class="w-full p-1
+                bg-slate-700 rounded-md text-white text-xs text-center
+                focus:outline-none"/>
+        </div>
+
+    </form>
+
+</app-inspector-dropdown>

@@ -1,0 +1,23 @@
+/* Tailwind CSS references */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-slate-600;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-700;
+}

@@ -1,0 +1,44 @@
+
+<section class="px-2 flex place-items-center justify-center gap-2">
+
+    <article>
+        <img src="svg/other/logo_a.svg"
+            alt="Vortex editor icon"
+            class="size-5 p-1
+            hover:bg-slate-700 rounded-md cursor-pointer"/>
+    </article>
+
+    <article>
+        <h1 (click)="handleSelectedMenu('file')"
+            [ngClass]="{'bg-slate-700': selectedMenu === 'file'}"
+            class="p-1
+            hover:bg-slate-700 rounded-md text-white text-sm cursor-pointer">
+            File
+        </h1>
+
+        <app-top-file-menu [selectedMenu]="selectedMenu"> </app-top-file-menu>
+    </article>
+
+    <article>
+        <h1 (click)="handleSelectedMenu('scene')"
+            [ngClass]="{'bg-slate-700': selectedMenu === 'scene'}"
+            class="p-1
+            hover:bg-slate-700 rounded-md text-white text-sm cursor-pointer">
+            Scene
+        </h1>
+
+        <app-top-scene-menu [selectedMenu]="selectedMenu"> </app-top-scene-menu>
+    </article>
+
+    <article>
+        <h1 (click)="handleSelectedMenu('new')"
+            [ngClass]="{'bg-slate-700': selectedMenu === 'new'}"
+            class="p-1
+            hover:bg-slate-700 rounded-md text-white text-sm cursor-pointer">
+            New
+        </h1>
+
+        <app-top-add-menu [selectedMenu]="selectedMenu"> </app-top-add-menu>
+    </article>
+
+</section>
