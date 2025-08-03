@@ -22,8 +22,6 @@
 
 This project was developed to enhance my skills with Angular and best practices from the development to the deployment of the application. It features a 3D editor that enables users to interact with objects in a 3D environment with the provided tools, also features a user-friendly responsive UI that can be customized to meet the user preferences.
 
-The project can be tested in the following URL: https://vortex-editor-37e8d.web.app/editor
-
 ## Technologies
 
 The technologies employed in this project encompass `Angular` with `Typescript` for the frontend development, `RXJS` for managing asynchronous data flows with observables, `Three.js` for WebGL rendering in the browser, `Tailwind CSS` for streamlined application styling, `Git` for version control, and `Firebase` for hosting the final application.
